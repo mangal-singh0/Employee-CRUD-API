@@ -26,3 +26,19 @@ mvn clean package
 ```
 Creates `target/final_demo-0.0.1-SNAPSHOT.jar`.
 
+## Frontend (React + Tailwind)
+Located in `frontend/`.
+
+```sh
+cd frontend
+npm install
+npm run dev   # serves at http://localhost:5173
+```
+
+The UI expects the API at `http://localhost:8080`. Override by creating `.env` in `frontend/`:
+```
+VITE_API_BASE=http://your-api-host:8080
+```
+
+Then reload the dev server or rebuild (`npm run build`).
+
